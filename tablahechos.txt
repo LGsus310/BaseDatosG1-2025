@@ -1,0 +1,43 @@
+CREATE TABLE materiales (
+    id_material SERIAL PRIMARY KEY,
+    nombre_material VARCHAR(50) NOT NULL,
+    costo_tonelada DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE puntos_recoleccion (
+    id_punto_recoleccion SERIAL PRIMARY KEY,
+    direccion VARCHAR(100),
+    zona VARCHAR(50),
+    tipo_punto VARCHAR(50)
+);
+
+CREATE TABLE operarios (
+    id_operario SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    turno VARCHAR(20),
+    zona_asignada VARCHAR(50)
+);
+
+CREATE TABLE vehiculos (
+    id_vehiculo SERIAL PRIMARY KEY,
+    patente VARCHAR(20) NOT NULL,
+    tipo_vehiculo VARCHAR(50),
+    capacidad_kg INT,
+    estado VARCHAR(30)
+);
+
+CREATE TABLE recolecciones (
+    id_recoleccion SERIAL PRIMARY KEY,
+    fecha DATE NOT NULL,
+    id_punto_recoleccion INT,
+    id_material INT,
+    id_operario INT,
+    id_vehiculo INT,
+    peso_kg DECIMAL(10,2),
+    costo_total DECIMAL(10,2),
+
+    FOREIGN KEY (id_punto_recoleccion) REFERENCES puntos_recoleccion(id_punto_recoleccion),
+    FOREIGN KEY (id_material) REFERENCES materiales(id_material),
+    FOREIGN KEY (id_operario) REFERENCES operarios(id_operario),
+    FOREIGN KEY (id_vehiculo) REFERENCES vehiculos(id_vehiculo)
+);
