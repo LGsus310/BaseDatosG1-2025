@@ -1,3 +1,24 @@
-Necesitamos un sistema que nos permita llevar el control de los materiales obtenidos por región (reciclable), tomando en cuenta la cantidad de material, el tipo de material, que tanto material de cada tipo, permitiéndonos conocer que material es mas usado por zonas, si debido a uno u otro material o cantidad del mismo, la cantidad necesitara de algún tipo de vehículo o instrumentos especiales para poder movilizarlo desde los puntos de recolección. Con los materiales recolectados, conocer el impacto ambiental que pueda tener este reciclaje (reducción de CO2 y agua que se evito contaminar).
-Saber con la cantidad de material recolectado si es necesario mas de un punto de reciclaje en cierta zona o si es una que no requiere destinar tantos recursos, esto basado en el tamaño de la zona en relación a los materiales recolectados.
-También llevar un registro de la relación costo por tonelada reciclada.
+Descripción del Sistema de Control de Materiales Reciclables
+
+El sistema deberá permitir el control detallado de los materiales reciclables obtenidos por región, considerando:
+-La cantidad total de material recolectado.
+-El tipo de material recolectado (papel, plástico, vidrio, aluminio, etc.).
+-El desglose de cuánto material de cada tipo se recolecta en cada zona.
+
+Con esta información, el sistema debe facilitar:
+
+1.Análisis de uso de materiales por zona:
+Identificar qué materiales son los más utilizados o más abundantes en cada región.
+
+2.Gestión logística basada en materiales:
+Determinar si la cantidad o tipo de material requiere vehículos o equipos especiales para su transporte desde los puntos de recolección.
+
+3.Evaluación del impacto ambiental:
+Calcular el impacto positivo del reciclaje, estimando la reducción de emisiones de CO2 y ahorro en el consumo de agua al evitar contaminación.
+
+4.Optimización de puntos de reciclaje:
+Basándose en la cantidad de material recolectado y el tamaño de la zona, identificar si es necesario aumentar o disminuir la cantidad de puntos de recolección, para usar eficientemente los recursos disponibles.
+
+5.Control y registro de costos:
+Mantener un registro actualizado de la relación costo por tonelada reciclada, para facilitar la gestión financiera y toma de decisiones.
+
