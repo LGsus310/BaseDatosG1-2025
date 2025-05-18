@@ -34,10 +34,9 @@ Para poder rellenar la base de datos es necesario:
 ### 3. Generar graficos
 
 - Para hacer uso del programa LlamadasSQLGraficos.py cambie los nombres de las conecciones con la base de datos y asegurese de que el usuario tenga permisos
-- Recuerde para Generar los graficos asegurese de tener claro los años a buscar, ya que el programa RellenarTablaRecolecciones genera los datos un año atras a la fecha que se encuentra
-cualquier cambio que necesite:
-  - Cambiar la cantidad de datos cambie el 100 en la linea 30 para agregar los datos que quiera
-  - Para cambiar la diferencia de los años en la linea 31 cambie el 365 (que son los dias antes) y cambielo por un valor mayor o menor dependiendo de que quiera hacer
+- Recuerde que para generar los gráficos debe tener claro el año o los años que desea consultar, ya que el programa RellenarTablaRecolecciones.py genera datos correspondientes al año anterior a la fecha actual. Si necesita hacer algún cambio en ese rango, ajuste el programa según corresponda:
+  - Para modificar la cantidad de datos generados, cambia el valor 100 en la línea 30 por la cantidad que desees. De esta forma, podrás controlar cuántos registros se crearán.
+  - Para ajustar el rango de días que se resta en la línea 31, modifica el valor 365 (que representa un año en días). Puedes cambiarlo por un número mayor o menor según el periodo de tiempo que desees considerar
 
 ---
 
