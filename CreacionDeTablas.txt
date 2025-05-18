@@ -1,7 +1,7 @@
 CREATE TABLE materiales (
     id_material SERIAL PRIMARY KEY,
     nombre_material VARCHAR(50) NOT NULL,
-    costo_tonelada DECIMAL(10,2) NOT NULL
+    costo_kg DECIMAL(10,2) NOT NULL
 );
 
 CREATE TABLE puntos_recoleccion (
