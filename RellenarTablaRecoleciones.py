@@ -22,7 +22,7 @@ operario_ids = get_ids('operarios', 'id_operario')
 vehiculo_ids = get_ids('vehiculos', 'id_vehiculo')
 
 # Obtener costos por tonelada de materiales
-cur.execute("SELECT id_material, costo_tonelada FROM materiales")
+cur.execute("SELECT id_material, costo_kg FROM materiales")
 material_costos = dict(cur.fetchall())
 
 # Generar 100 registros aleatorios
@@ -36,8 +36,8 @@ for _ in range(100):
     peso_kg = round(random.uniform(100, 2000), 2)
     
     # Calcular el costo total
-    costo_ton = material_costos[id_material]
-    costo_total = round((peso_kg / 1000) * float(costo_ton), 2)
+    costo_kg = material_costos[id_material]
+    costo_total = round((peso_kg) * float(costo_kg), 2)
 
     recolecciones.append((
         fecha.date(),
