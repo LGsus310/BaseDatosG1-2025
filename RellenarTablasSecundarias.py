@@ -30,7 +30,7 @@ materiales = [
 ]
 
 cur.executemany("""
-    INSERT INTO materiales (nombre_material, costo_tonelada)
+    INSERT INTO materiales (nombre_material, costo_kg)
     VALUES (%s, %s)
 """, materiales)
 
