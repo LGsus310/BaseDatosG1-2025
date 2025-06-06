@@ -1,23 +1,18 @@
-Descripción del Sistema de Control de Materiales Reciclables
+## Detalles de la base de datos
 
-El sistema deberá permitir el control detallado de los materiales reciclables obtenidos por región, considerando:
--La cantidad total de material recolectado.
--El tipo de material recolectado (papel, plástico, vidrio, aluminio, etc.).
--El desglose de cuánto material de cada tipo se recolecta en cada zona.
+La base de datos a trabajar permite registrar, organizar y analizar los datos relacionados con la recolección y procesamiento de residuos reciclables en distintas zonas. Su objetivo principal es optimizar los procesos logísticos y operativos, fomentar la participación ciudadana en el reciclaje y evaluar su impacto ambiental y social en la comunidad.
 
-Con esta información, el sistema debe facilitar:
+A continuación se mencionan los elementos de la base de datos:
 
-1.Análisis de uso de materiales por zona:
-Identificar qué materiales son los más utilizados o más abundantes en cada región.
+-Materiales: Cada tipo de residuo reciclable tiene un identificador único, su nombre y el costo asociado por kilogramo.
 
-2.Gestión logística basada en materiales:
-Determinar si la cantidad o tipo de material requiere vehículos o equipos especiales para su transporte desde los puntos de recolección.
+-Operarios: Se registran los datos de los trabajadores encargados de la recolección. Cada operario tiene un ID, su nombre, el turno en que trabaja y la zona asignada.
 
-3.Evaluación del impacto ambiental:
-Calcular el impacto positivo del reciclaje, estimando la reducción de emisiones de CO2 y ahorro en el consumo de agua al evitar contaminación.
+-Vehículos: Cada vehículo utilizado en las recolecciones tiene una patente única, tipo (camión, camioneta, etc.), capacidad máxima en kilogramos y estado operativo.
 
-4.Optimización de puntos de reciclaje:
-Basándose en la cantidad de material recolectado y el tamaño de la zona, identificar si es necesario aumentar o disminuir la cantidad de puntos de recolección, para usar eficientemente los recursos disponibles.
+-Puntos de Recolección: Estos representan las ubicaciones físicas donde se recolectan los materiales reciclables. Cada punto incluye su dirección, comuna y tipo (que residuos acepta). 
+
+-Recolecciones: Contiene la fecha, el punto de recolección, el material recolectado, el operario asignado y el vehículo utilizado. También se especifica el peso recolectado y el costo total asociado.
 
 5.Control y registro de costos:
 Mantener un registro actualizado de la relación costo por tonelada reciclada, para facilitar la gestión financiera y toma de decisiones.
