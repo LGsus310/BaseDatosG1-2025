@@ -13,7 +13,3 @@ A continuación se mencionan los elementos de la base de datos:
 -Puntos de Recolección: Estos representan las ubicaciones físicas donde se recolectan los materiales reciclables. Cada punto incluye su dirección, comuna y tipo (que residuos acepta). 
 
 -Recolecciones: Contiene la fecha, el punto de recolección, el material recolectado, el operario asignado y el vehículo utilizado. También se especifica el peso recolectado y el costo total asociado.
-
-5.Control y registro de costos:
-Mantener un registro actualizado de la relación costo por tonelada reciclada, para facilitar la gestión financiera y toma de decisiones.
-
